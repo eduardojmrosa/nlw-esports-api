@@ -6,7 +6,6 @@ import { convertMinutesToHours } from "./utils/convert-minutes-to-hours";
 
 const app = express();
 app.use(express.json());
-app.use(cors);
 const prisma = new PrismaClient({
   log: ["query"],
 });
